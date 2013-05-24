@@ -24,15 +24,13 @@
         <div class="fl">
           <a class="small-logo" href="{$WWWROOT}"><img src="{$WWWROOT}theme/mahara-plus/static/images/site-logo-small.png" alt="{$sitename}"></a>
         </div>
-        <h1 class="center title">{$microheadertitle|safe}</h1>
+        {if $collection}
+		<div id="collection"><h1 class="collection-title">{$microheadertitle|safe}</h1>{include file=collectionnav.tpl}</div>	
+	{/if}
+	{if !$collection}<h1 class="center title">{$microheadertitle|safe}</h1>{/if}
       </div>
       <div class="viewheader">
 
-{if $collection}
-        <div id="collection"><h1 class="collection-title">{$microheadertitle|safe}</h1>{include file=collectionnav.tpl}</div>
-{else}
-        
-{/if}
 		<div class="cb"></div>
       </div>
     </div>

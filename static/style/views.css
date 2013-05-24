@@ -1,0 +1,21 @@
+.collection-title {
+	float:left;
+	margin:0 auto;
+	line-height:44px;
+	color:#999;
+	font-weight:normal;
+}
+#collectionnavwrap {
+	width:60%;
+	margin:0 auto;
+	text-align:center;
+}
+ul.colnav li a {
+	background:none;
+	text-decoration:none;
+}
+ul.colnav li {
+	color:#999;
+	font-size:1.3em;
+	font-weight:normal;
+}
