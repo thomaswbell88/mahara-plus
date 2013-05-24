@@ -10,7 +10,6 @@
 {if $USERMASQUERADING}<div class="sitemessage"><img src="{theme_url filename='images/icon_problem.gif'}" alt="">{$masqueradedetails} {$becomeyouagain|safe}</div>{/if}
 {if $SITECLOSED}<div class="sitemessage center">{if $SITECLOSED == 'logindisabled'}{str tag=siteclosedlogindisabled section=mahara arg1="`$WWWROOT`admin/upgrade.php"}{else}{str tag=siteclosed}{/if}</div>{/if}
 <div id="containerX">
-    
     <div id="loading-box"></div>
     <div id="top-wrapper">
       <div class="viewheadertop">
@@ -23,7 +22,7 @@
           <a class="btn nojs-hidden-inline" href="javascript:history.back()">{str tag=back}</a>
         </div>
         <div class="fl">
-          <a class="small-logo" href="{$WWWROOT}"><img src="{theme_url filename='images/site-logo-small.png'}" alt="{$sitename}"></a>
+          <a class="small-logo" href="{$WWWROOT}"><img src="{$WWWROOT}theme/mahara-plus/static/images/site-logo-small.png" alt="{$sitename}"></a>
         </div>
         <h1 class="center title">{$microheadertitle|safe}</h1>
       </div>
