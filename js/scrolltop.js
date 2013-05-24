@@ -11,5 +11,4 @@ $j(document).ready(function(){
     		e.stopPropagation();
 		});
 });
-});
 
