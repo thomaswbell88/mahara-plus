@@ -33,7 +33,7 @@
 {/foreach}
     <link rel="stylesheet" type="text/css" href="{theme_url filename='style/print.css'}" media="print">
     <script type="text/javascript" src="{$WWWROOT}js/css.js"></script>
-    <script type="text/javascript" src="{$WWWROOT}theme/plus/js/scrolltop.js"></script>
+    <script type="text/javascript" src="{$WWWROOT}theme/mahara-plus/js/scrolltop.js"></script>
     <link rel="shortcut icon" href="{$WWWROOT}favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="image_src" href="{$sitelogo}">
 </head>
