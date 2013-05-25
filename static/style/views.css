@@ -1,6 +1,9 @@
 #column-container {
     background:none transparent;
 }
+.postlist td h3 {
+	border-bottom:none;
+}
 .collection-title {
 	float:left;
 	margin:0 15px;
@@ -13,7 +16,7 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	-o-text-overflow: ellipsis;
-	width:400px;
+	width:250px;
 	white-space:nowrap;
 	font-family: 'RobotoThin';
 }
@@ -23,20 +26,44 @@
 	margin:0 5px;
 }
 #collectionnavwrap {
-	width:60%;
-	margin:0 auto;
+	width:55%;
+	margin:0;
 	text-align:center;
 	padding:0;
+	float:left;
 }
-ul.colnav li a {
+#containerX div.colnav-extra {
+	position:absolute;
+	top:44px;
+	background: #fff;
+	min-height: 44px;
+	width: 150px;
+	right:15%;
+	text-align:right;
+	border-top:solid 1px #e5e5e5;
+	box-shadow:0 1px 2px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow:0 1px 2px 0px rgba(0,0,0,0.1);
+	transition:all ease 0.3s;
+    -webkit-transition:all ease 0.3s;
+}
+#containerX div.colnav-extra li {
+	float:right;
+}
+#containerX a#colnav-more-a {
+	font-family:'RobotoBold', Arial, sans;
+}
+#colnav-showmore-div {
+	float:right;
+}
+#containerX ul.colnav li a {
 	background:none;
 	text-decoration:none;
 	line-height:41px;
 	border-bottom: solid 3px #fff;
 	font-weight:normal;
-	font-family: 'RobotoMedium', Arial, sans;
+	font-family: 'RobotoThin', Arial, sans;
 }
-ul.colnav li a:hover {
+#containerX ul.colnav li a:hover {
 	border-bottom: solid 3px #B5D378;
 	transition:all ease 0.3s;
 	-webkit-transition:all ease 0.3s;
@@ -63,7 +90,7 @@ ul.colnav li.selected span {
 .blockinstance {
 	background:#fff;
 	margin:14px 0;
-	padding:5px 10px;
+	padding:5px 10px 10px 10px;
 	box-shadow:0 1px 2px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow:0 1px 2px 0px rgba(0,0,0,0.1);
 }
