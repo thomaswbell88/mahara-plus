@@ -1,4 +1,4 @@
-body#micro {
+body#micro, body {
 	background:#e5e5e5;
 	font-family:'RobotoLight', Arial, sans;
 }
@@ -8,6 +8,7 @@ body#micro a {
 	font-family: 'RobotoBold', Arial, sans;
 	font-weight: normal;
 }
+body, caption, th, td, input, textarea, select, option, legend, fieldset, button, p {font-family:'RobotoLight', Arial, sans; }
 @font-face {font-family: Roboto;src: url('../fonts/Roboto-Regular.ttf');}
 @font-face {font-family: RobotoMedium;src: url('../fonts/Roboto-Medium.ttf');}
 @font-face {font-family: RobotoBold;src: url('../fonts/Roboto-Bold.ttf');}
