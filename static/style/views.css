@@ -112,3 +112,7 @@ ul.colnav li.selected span {
 .bt-image .blockinstance-content div a img {
 	padding-bottom:5px;
 }
+/* Footer  */
+.viewfooter {
+	background:#fff;
+}
