@@ -25,9 +25,9 @@
 				  <a class="small-logo" href="{$WWWROOT}"><img src="{$WWWROOT}theme/mahara-plus/static/images/site-logo-small.png" alt="{$sitename}"></a>
 				</div>
 				{if $collection}
-				<div id="collection"><h1 class="collection-title">{$microheadertitle|safe}</h1><p>{$author|safe}</p>{include file=collectionnav.tpl}</div>	
+				<div id="collection"><h1 class="collection-title" title="{$microheadertitle|safe}">{$microheadertitle|safe}</h1><p>{$author|safe}</p>{include file=collectionnav.tpl}</div>	
 			{/if}
-			{if !$collection}<h1 class="center title">{$microheadertitle|safe}</h1><p>{$author|safe}</p>{/if}
+			{if !$collection}<h1 class="center title"title="{$microheadertitle|safe}">{$microheadertitle|safe}</h1><p>{$author|safe}</p>{/if}
       </div>
       <div class="viewheader">
 
