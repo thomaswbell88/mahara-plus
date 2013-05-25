@@ -1,3 +1,24 @@
+body#micro {
+	background:#e5e5e5;
+	font-family:'RobotoLight', Arial, sans;
+}
+body#micro a {
+	color:#262626;
+	text-decoration:none;
+	font-family: 'RobotoBold', Arial, sans;
+	font-weight: normal;
+}
+@font-face {font-family: Roboto;src: url('../fonts/Roboto-Regular.ttf');}
+@font-face {font-family: RobotoMedium;src: url('../fonts/Roboto-Medium.ttf');}
+@font-face {font-family: RobotoBold;src: url('../fonts/Roboto-Bold.ttf');}
+@font-face {font-family: RobotoLight;src: url('../fonts/Roboto-Light.ttf');}
+@font-face {font-family: RobotoThin;src: url('../fonts/Roboto-Thin.ttf');}
+#micro #main-column-container {
+	background: none;
+}
+#column-container {
+	background:none transparent;
+}
 #mainmiddlewrap {
 	max-width:65%;
 	margin:50px auto;
@@ -13,8 +34,16 @@
     box-shadow:0 2px 4px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow:0 2px 4px 0px rgba(0,0,0,0.1);
 }
+.viewheadertop a {
+	color:#333;
+	font-family: 'RobotoMedium', Arial, sans;
+	text-decoration:none;
+}
 .viewheadertop .title {
     margin:0;
     padding:0;
     line-height:44px;
+}
+.thumbnails .frame {
+	border:solid 1px rgba(50,50,50,0.1);
 }
