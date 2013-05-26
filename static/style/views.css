@@ -4,14 +4,7 @@
 .postlist td h3 {
 	border-bottom:none;
 }
-.collection-title {
-	float:left;
-	margin:0 15px;
-	line-height:44px;
-	color:#999;
-	font-weight:normal;
-}
-#collection h1.collection-title {
+#collection h1.collection-title, #containerX .title {
 	margin:0 15px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -19,8 +12,12 @@
 	width:250px;
 	white-space:nowrap;
 	font-family: 'RobotoThin';
+	float:left;
+	line-height:44px;
+    color:#999;
+    font-weight:normal;
 }
-#collection p {
+#collection > p, .viewheadertop > p {
 	float:left;
 	line-height:44px;
 	margin:0 5px;
