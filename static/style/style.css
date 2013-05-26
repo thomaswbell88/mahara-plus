@@ -48,6 +48,9 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, button
     padding:0;
     line-height:44px;
 }
+.viewheadertop .links {
+	margin:11px 0;
+}
 .thumbnails .frame {
 	border:solid 1px rgba(50,50,50,0.1);
 }
