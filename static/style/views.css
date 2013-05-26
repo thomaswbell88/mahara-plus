@@ -160,9 +160,28 @@ ul.colnav li.selected span {
     }
 	
 }
-/* Styles less than 800px */
-@media screen and (max-width:830px) {
+/* Styles less than 830px */
+@media screen and (max-width:900px) {
 	#collection > p {
-		font-size:0.7em;
+		font-size:0.6em;
 	}
+	#collection h1.collection-title {
+        font-size:1.0em;
+        width:150px;
+        margin:0 5px;
+    }
+    #collection > p {
+        margin:0 5px;
+        font-size:0.7em;
+    }
+    ul.colnav li {
+        font-size:0.8em;
+    }
+    #containerX ul.colnav li {
+        margin:0 5px;
+    }
+    #mainmiddlewrap {
+        min-width:95%;
+    }
 }
+/* @TODO - Styles are good down to ~820px, below this, we lose the collection navigation. */
