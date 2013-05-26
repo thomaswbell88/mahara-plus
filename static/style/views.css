@@ -9,7 +9,9 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
 	width:250px;
+	word-wrap:normal;
 	white-space:nowrap;
 	font-family: 'RobotoThin';
 	float:left;
