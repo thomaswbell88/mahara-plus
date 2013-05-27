@@ -10,6 +10,7 @@ Plus
  * G+ like interface
 ## Tested compatibility:
  * Chrome 25+
+ * Opera 12.15
  * IE7
  * IE8
  * IE10
