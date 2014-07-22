@@ -4,7 +4,7 @@
 .postlist td h3 {
 	border-bottom:none;
 }
-#collection h1.collection-title, #containerX .title {
+#collection h1.collection-title, #containerX + .title {
 	margin:0 15px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -14,10 +14,12 @@
 	word-wrap:normal;
 	white-space:nowrap;
 	font-family: 'RobotoThin';
+	font-size:1.5em;
 	float:left;
 	line-height:44px;
     color:#999;
     font-weight:normal;
+    text-align: left;
 }
 #collection > p, .viewheadertop > p {
 	float:left;
@@ -118,6 +120,7 @@ ul.colnav li.selected span {
 }
 .blockinstance-content {
 	padding-top:10px;
+	overflow-x:inherit;
 }
 .blockinstance-content div a img {
 	max-width:96%;
