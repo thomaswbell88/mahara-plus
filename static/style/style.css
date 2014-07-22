@@ -60,7 +60,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, button
 	background:none transparent;
 }
 #mainmiddlewrap {
-	max-width:65%;
+	max-width:94%;
 	margin:50px auto;
 }
 #top-wrapper, #mainmiddle, #footer-wrap {
@@ -76,6 +76,9 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, button
     z-index:1000;
     box-shadow:0 2px 4px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow:0 2px 4px 0px rgba(0,0,0,0.1);
+}
+.viewheadertop a.small-logo {
+    margin-left:0;
 }
 .viewheadertop a {
 	color:#333;
