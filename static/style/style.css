@@ -68,7 +68,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, button
 }
 .viewheadertop {
     width:100%;
-    height:44px;
     padding:0;
     background:white;
     position:fixed;
@@ -91,7 +90,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, button
     line-height:44px;
 }
 .viewheadertop .links {
-	margin:6px 0;
+	margin:0;
 }
 .thumbnails .frame {
 	border:solid 1px rgba(50,50,50,0.1);

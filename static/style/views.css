@@ -4,37 +4,29 @@
 .postlist td h3 {
 	border-bottom:none;
 }
-#collection h1.collection-title, #containerX .title {
+
+
+#collection h1.collection-title, #container .title {
 	margin:0 15px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	-o-text-overflow: ellipsis;
 	-ms-text-overflow: ellipsis;
-	width:250px;
 	word-wrap:normal;
 	white-space:nowrap;
 	font-family: 'RobotoThin';
-	float:left;
 	line-height:44px;
     color:#999;
     font-weight:normal;
-}
-#collection > p, .viewheadertop > p {
-	float:left;
-	line-height:44px;
-	margin:0 5px;
 }
 #collectionnavwrap {
 	min-width:35%;
 	margin:0;
 	text-align:center;
 	padding:0;
-	float:left;
 }
-#containerX div.colnav1 {
-	float:left;
-}
-#containerX div.colnav-extra {
+
+#container div.colnav-extra {
 	position:absolute;
 	top:44px;
 	background: #fff;
@@ -48,19 +40,10 @@
 	transition:all ease 0.3s;
     -webkit-transition:all ease 0.3s;
 }
-#containerX div.colnav-extra li {
-	float:right;
-}
-#containerX a#colnav-more-a {
+#container a#colnav-more-a {
 	font-family:'RobotoBold', Arial, sans;
 }
-#colnav-showmore-div {
-	float:right;
-}
-#containerX div.colnav-showmore {
-	float:left;
-}
-#containerX ul.colnav li a {
+#container ul.colnav li a {
 	background:none;
 	text-decoration:none;
 	line-height:41px;
@@ -68,7 +51,7 @@
 	font-weight:normal;
 	font-family: 'RobotoThin', Arial, sans;
 }
-#containerX ul.colnav li a:hover {
+#container ul.colnav li a:hover {
 	border-bottom: solid 3px #B5D378;
 	transition:all ease 0.3s;
 	-webkit-transition:all ease 0.3s;
@@ -78,16 +61,16 @@ ul.colnav li {
 	font-size:1.1em;
 	font-weight:normal;
 }
-#containerX ul.colnav li {
+#container ul.colnav li {
 	padding:0;
-	margin:0 15px
+	margin:0 5px
 }
 ul.colnav li.selected span {
 	background:none;
 	border-bottom: solid 3px #B5D378;
 	line-height:41px;
 }
-#containerX ul.colnav li a, #containerX ul.colnav li.selected span {
+#container ul.colnav li a, #container ul.colnav li.selected span {
 	padding:0;
 	margin:0;
 }
@@ -142,7 +125,7 @@ ul.colnav li.selected span {
 	ul.colnav li {
 		font-size:0.9em;
 	}
-	#containerX ul.colnav li {
+	#container ul.colnav li {
 		margin:0 5px;
 	}
 	#mainmiddlewrap {
@@ -163,7 +146,7 @@ ul.colnav li.selected span {
 	ul.colnav li {
         font-size:0.9em;
     }
-    #containerX ul.colnav li {
+    #container ul.colnav li {
         margin:0 5px;
     }
 	#mainmiddlewrap {
@@ -188,7 +171,7 @@ ul.colnav li.selected span {
     ul.colnav li {
         font-size:0.8em;
     }
-    #containerX ul.colnav li {
+    #container ul.colnav li {
         margin:0 5px;
     }
     #mainmiddlewrap {
@@ -196,3 +179,91 @@ ul.colnav li.selected span {
     }
 }
 /* @TODO - Styles are good down to ~820px, below this, we lose the collection navigation. */
+
+
+
+/* FLEX GRID SYSTEM FOR HEADER */
+
+.viewheadertop {
+	display: flex;
+}
+.viewheadertop .logo {
+	order:1;
+	flex:0 0 44px;
+	align-self:center;
+}
+.viewheadertop #collection,
+.viewheadertop .page-header {
+	order:2;
+	flex:auto;
+}
+.viewheadertop .page-header {
+	display: flex;
+	align-items:center;
+}
+.viewheadertop .page-header .title {
+	order:1;
+	font-size: 2.0em;
+}
+.viewheadertop .page-header .page-author {
+	order:2;
+}
+.viewheadertop .links {
+	order:4;
+	flex:10%;
+	align-self:center;
+	display: flex;
+	justify-content:flex-end;
+}
+.viewheadertop .links .btn {
+	display: block;
+	flex-direction:column;
+	overflow: hidden;
+	white-space: nowrap;
+	word-wrap:normal;
+	text-overflow:ellipsis;
+	text-align: center;
+}
+
+#collection {
+	display: flex;
+	align-items:center;
+}
+#collection .collection-header, #collectionnavwrap {
+	display: flex;
+	flex: 0 0 50%;
+}
+#collection .collection-title,
+.viewheadertop header .title {
+	font-size: 2.0em;
+	text-align: left;
+}
+#collection .collection-author {
+	align-self:center;
+}
+#collection #collectionnavwrap .colnav1{
+	flex:90%;
+}
+#collection #collectionnavwrap .colnav1 .colnav {
+	display: flex;
+	align-items:center;
+}
+#collection #collectionnavwrap .colnav li {
+	flex-grow:1;
+}
+#collection #collectionnavwrap .colnav li a, 
+#collection #collectionnavwrap .colnav li a.colnav,
+#collection #collectionnavwrap .colnav li.selected span {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+#collection #colnav-showmore-div {
+	flex:10%;
+}
+#collection .colnav .item {
+	flex-grow:1;
+}
+
+/* Single page HEADER FLEX */

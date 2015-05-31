@@ -3,11 +3,11 @@
 <div class="{if $dwoo.foreach.cchunk.first}colnav1{else}colnav-extra{/if}">
 <ul class="colnav">
   {foreach from=$chunk item=view}
-  <li{if $view->view == $viewid} class="selected"{if $haslots}{$showmore=true}{/if}{/if}>
+  <li {if $view->view == $viewid} class="selected"{if $haslots}{$showmore=true}{/if}{/if}>
       {if $view->view != $viewid}
-          <a class="colnav" href="{$view->fullurl}"title="{$view->title}">{$view->title|str_shorten_text:15:true}</a>
+          <a class="colnav" href="{$view->fullurl}"title="{$view->title}">{$view->title}</a>
       {else}
-          <span title="{$view->title}">{$view->title|str_shorten_text:15:true}</span>
+          <span title="{$view->title}">{$view->title}</span>
       {/if}
   </li>
   {/foreach}
