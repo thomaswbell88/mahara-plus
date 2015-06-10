@@ -278,3 +278,6 @@ ul.colnav li.selected span {
 }
 
 /* Single page HEADER FLEX */
+.r0, .r0 td, .d0, .r1, .r1 td, .d1 {
+	background:#FFF;
+}

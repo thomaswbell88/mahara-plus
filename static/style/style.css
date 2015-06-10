@@ -129,3 +129,13 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, button
     margin-top:5px;
     padding-top:0;
 }
+.subpage {
+    margin:0;
+}
+.subpage li.current-tab {
+    background: #FFF;
+}
+.subpage ul.in-page-tabs li.current-tab {
+    background: #FFF;
+}
+}
