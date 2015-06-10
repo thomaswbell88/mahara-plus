@@ -21,3 +21,4 @@ Plus
  * Add responsive layouts for below 900px
  * Style for non-"Small Page Headers" option
  * Style entire Mahara as a stand-alone site theme
+ * Get a standard layout going. rework the current markup
