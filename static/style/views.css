@@ -4,10 +4,23 @@
 .postlist td h3 {
 	border-bottom:none;
 }
+.blockinstance-header .title {
+	font-size: 1.1em;
+	margin:0;
+	border-width: 1px;
+	line-height: 25px;
+	color:#333;
+}
 
-
+.title .detail-small {
+	float:right;
+	align-self:center;
+	width: 13px;
+    height: 13px;
+    padding: 6px 0px;
+}
 #collection h1.collection-title, #container .title {
-	margin:0 15px;
+	margin:0 10px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	-o-text-overflow: ellipsis;
@@ -15,8 +28,7 @@
 	word-wrap:normal;
 	white-space:nowrap;
 	font-family: 'RobotoThin';
-	line-height:44px;
-    color:#999;
+    
     font-weight:normal;
 }
 #collectionnavwrap {
