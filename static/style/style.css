@@ -66,6 +66,27 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, button
 #top-wrapper, #mainmiddle, #footer-wrap {
 	min-width:0;
 }
+#top-wrapper {
+    display: flex;
+    background: white;
+}
+#top-wrapper #main-nav {
+    flex:auto;
+    flex-wrap:wrap;
+    flex-direction:horizontal;
+    order:1;
+    background: transparent;
+    align-self:center;
+    display: block;
+}
+
+#top-wrapper #header {
+    flex:auto;
+    order:2;
+    flex-direction:horizontal;
+    flex-wrap:nowrap;
+}
+
 .viewheadertop {
     width:100%;
     padding:0;
