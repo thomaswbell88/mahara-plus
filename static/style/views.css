@@ -288,8 +288,10 @@ ul.colnav li.selected span {
 #collection .colnav .item {
 	flex-grow:1;
 }
-
-/* Single page HEADER FLEX */
+#container div.colnav-extra .colnav{
+	flex-direction:column;
+	display: flex;
+}
 #commentfiles {
 	background: transparent;
 	border: 1px solid #e5e5e5;
