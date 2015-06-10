@@ -36,7 +36,7 @@
 			{/if}
 			{if !$collection}
         <header class="page-header">
-          <h1 class="title"title="{$microheadertitle|safe}">
+          <h1 class="title">
             {$microheadertitle|safe}
           </h1>
           <span class="page-author">
