@@ -290,6 +290,10 @@ ul.colnav li.selected span {
 }
 
 /* Single page HEADER FLEX */
+#commentfiles {
+	background: transparent;
+	border: 1px solid #e5e5e5;
+}
 .r0, .r0 td, .d0, .r1, .r1 td, .d1 {
 	background:#FFF;
 }

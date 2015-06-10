@@ -138,4 +138,8 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, button
 .subpage ul.in-page-tabs li.current-tab {
     background: #FFF;
 }
+#messages {
+    padding:10px 0;
+    margin:0;
+    position: absolute;
 }

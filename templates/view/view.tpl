@@ -44,8 +44,11 @@
     </table>
     {$feedback->pagination|safe}
     {/if}
-	<div id="viewmenu">
-        {include file="view/viewmenu.tpl" enablecomments=$enablecomments}
+  <div id="viewmenu">
+        {if $feedback->position eq 'base' && $enablecomments}
+            <a id="add_feedback_link" class="feedback" href="">{str tag=placefeedback section=artefact.comment}</a>
+        {/if}
+        {include file="view/viewmenu.tpl"}
     </div>
     {if $addfeedbackform}<div>{$addfeedbackform|safe}</div>{/if}
     {if $objectionform}<div>{$objectionform|safe}</div>{/if}
