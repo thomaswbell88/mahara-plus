@@ -178,6 +178,17 @@ ul.colnav li.selected span {
         min-width:95%;
     }
 }
+
+/* Styles less than 830px */
+@media screen and (min-width:1200px) {
+	#mainmiddlewrap {
+		max-width: 75%;
+	}
+	#mainmiddle {
+		max-width: 1800px;
+	}
+}
+
 /* @TODO - Styles are good down to ~820px, below this, we lose the collection navigation. */
 
 
